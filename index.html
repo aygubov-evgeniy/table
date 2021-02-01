@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table id="table">
+    <thead>
+      <tr>
+        <td>Имя</td>
+        <td>Телефон</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><span>User 1</span></td>
+        <td><span>1230984</span></td>
+
+        <td><button class="btn-edit">Редактировать</button></td>
+        <td><button class="btn-remove">Удалить</button></td>
+      </tr>
+
+      <tr>
+        <td><span>User 2</span></td>
+        <td><span>1230984</span></td>
+
+        <td><button class="btn-edit">Редактировать</button></td>
+        <td><button class="btn-remove">Удалить</button></td>
+      </tr>
+
+      <tr>
+        <td><span>User 3</span></td>
+        <td><span>1230984</span></td>
+
+        <td><button class="btn-edit">Редактировать</button></td>
+        <td><button class="btn-remove">Удалить</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form>
+    <input type="text" name="name" required pattern="[Aa-z]{2,15}">
+    <input type="tel" name="phone" required pattern="[0-9]{8,20}" title="8-20 digits">
+    <button>Добавить</button>
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+</html>
